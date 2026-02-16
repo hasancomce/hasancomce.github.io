@@ -306,6 +306,85 @@ p {
 }
 
 /* ===========================
+   Focus Areas
+   =========================== */
+
+.focus-areas {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.focus-areas__heading {
+  font-size: var(--text-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.focus-areas__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-lg);
+}
+
+.focus-areas__item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.focus-areas__item strong {
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--color-white);
+}
+
+.focus-areas__item span {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+/* ===========================
+   Skills
+   =========================== */
+
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-xl);
+}
+
+.skills__group {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+}
+
+.skills__group-title {
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--color-accent);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--space-md);
+  padding-bottom: var(--space-sm);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.skills__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.skills__list li {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+/* ===========================
    Projects
    =========================== */
 
@@ -352,7 +431,22 @@ p {
 .project-card__description {
   color: var(--color-text-muted);
   font-size: var(--text-sm);
+  margin-bottom: var(--space-md);
+}
+
+.project-card__features {
   margin-bottom: var(--space-lg);
+  padding-left: var(--space-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  list-style: disc;
+}
+
+.project-card__features li {
+  font-size: 0.8rem;
+  color: var(--color-text);
+  line-height: 1.5;
 }
 
 .project-card__tags {
@@ -539,7 +633,15 @@ p {
     font-size: var(--text-2xl);
   }
 
+  .skills__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .projects__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .focus-areas__list {
     grid-template-columns: 1fr;
   }
 }
@@ -555,6 +657,10 @@ p {
 
   .btn {
     text-align: center;
+  }
+
+  .skills__grid {
+    grid-template-columns: 1fr;
   }
 
   .contact__grid {

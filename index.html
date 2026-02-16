@@ -22,6 +22,7 @@
     "name": "Hasan Comce",
     "url": "https://hasancomce.github.io",
     "jobTitle": "Full Stack Developer & Cybersecurity Specialist",
+    "knowsAbout": ["Full Stack Development", "Cybersecurity", "Cloud Infrastructure", "Secure Architecture"],
     "sameAs": [
       "https://github.com/hasancomce",
       "https://linkedin.com/in/hasancomce"
@@ -45,6 +46,7 @@
       <ul class="nav__list" role="list">
         <li><a href="#home" class="nav__link">Home</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
         <li><a href="#projects" class="nav__link">Projects</a></li>
         <li><a href="#contact" class="nav__link">Contact</a></li>
       </ul>
@@ -76,6 +78,86 @@
           <p>My cybersecurity focus includes vulnerability assessment, secure architecture design, and implementing defense-in-depth strategies. I believe security should be built in from the start, not bolted on after.</p>
           <p>I value clean code, clear documentation, and pragmatic solutions. Whether it's shipping a new feature or hardening an existing system, I focus on delivering reliable results that hold up in production.</p>
         </div>
+
+        <div class="focus-areas">
+          <h3 class="focus-areas__heading">Core Competencies</h3>
+          <ul class="focus-areas__list">
+            <li class="focus-areas__item">
+              <strong>Secure Architecture</strong>
+              <span>Designing systems with security at every layer — authentication, encryption, access control, and threat modeling.</span>
+            </li>
+            <li class="focus-areas__item">
+              <strong>Scalable Systems</strong>
+              <span>Building applications that handle growth gracefully through efficient data modeling, caching, and infrastructure design.</span>
+            </li>
+            <li class="focus-areas__item">
+              <strong>Clean Engineering</strong>
+              <span>Writing maintainable, well-tested code with clear boundaries, consistent patterns, and minimal technical debt.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills" aria-label="Technical skills">
+      <div class="container">
+        <h2 class="section__title">Skills &amp; Tech Stack</h2>
+        <div class="skills__grid">
+
+          <div class="skills__group">
+            <h3 class="skills__group-title">Frontend</h3>
+            <ul class="skills__list">
+              <li>HTML5 &amp; Semantic Markup</li>
+              <li>CSS3, Flexbox, Grid</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Responsive Design</li>
+              <li>Web Accessibility (WCAG)</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title">Backend</h3>
+            <ul class="skills__list">
+              <li>Node.js &amp; Express</li>
+              <li>Python</li>
+              <li>Go</li>
+              <li>REST API Design</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>Authentication &amp; OAuth 2.0</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title">Cybersecurity</h3>
+            <ul class="skills__list">
+              <li>Vulnerability Assessment</li>
+              <li>Penetration Testing</li>
+              <li>OWASP Top 10</li>
+              <li>Network Security</li>
+              <li>SIEM &amp; Log Analysis</li>
+              <li>Threat Modeling</li>
+              <li>Incident Response</li>
+            </ul>
+          </div>
+
+          <div class="skills__group">
+            <h3 class="skills__group-title">Tools &amp; DevOps</h3>
+            <ul class="skills__list">
+              <li>Git &amp; GitHub</li>
+              <li>Docker</li>
+              <li>Linux Administration</li>
+              <li>CI/CD Pipelines</li>
+              <li>AWS / Cloud Services</li>
+              <li>Elasticsearch</li>
+              <li>Nginx</li>
+            </ul>
+          </div>
+
+        </div>
       </div>
     </section>
 
@@ -91,6 +173,11 @@
               <span class="project-card__type">Full Stack</span>
             </div>
             <p class="project-card__description">Authentication microservice with OAuth 2.0, JWT token management, rate limiting, and brute-force protection. Handles 10k+ concurrent sessions with sub-100ms response times.</p>
+            <ul class="project-card__features" aria-label="Key features">
+              <li>Token rotation with automatic refresh and revocation</li>
+              <li>IP-based rate limiting and account lockout policies</li>
+              <li>Role-based access control with granular permissions</li>
+            </ul>
             <ul class="project-card__tags" aria-label="Technologies used">
               <li>Node.js</li>
               <li>Express</li>
@@ -116,6 +203,11 @@
               <span class="project-card__type">Security</span>
             </div>
             <p class="project-card__description">Command-line vulnerability scanner that automates OWASP Top 10 checks against web applications. Generates detailed reports with severity ratings and remediation guidance.</p>
+            <ul class="project-card__features" aria-label="Key features">
+              <li>Async scanning engine for parallel target assessment</li>
+              <li>HTML and JSON report generation with CVSS scoring</li>
+              <li>Plugin architecture for custom vulnerability checks</li>
+            </ul>
             <ul class="project-card__tags" aria-label="Technologies used">
               <li>Python</li>
               <li>asyncio</li>
@@ -140,6 +232,11 @@
               <span class="project-card__type">Front End</span>
             </div>
             <p class="project-card__description">Real-time monitoring dashboard for cloud infrastructure. Displays server health, resource usage, and alert history with interactive data visualizations.</p>
+            <ul class="project-card__features" aria-label="Key features">
+              <li>Live-updating charts with configurable refresh intervals</li>
+              <li>Threshold-based alerting with notification history</li>
+              <li>Multi-region server overview with status aggregation</li>
+            </ul>
             <ul class="project-card__tags" aria-label="Technologies used">
               <li>React</li>
               <li>TypeScript</li>
@@ -164,6 +261,11 @@
               <span class="project-card__type">Security</span>
             </div>
             <p class="project-card__description">Log aggregation and analysis tool that parses firewall, IDS, and server logs to detect anomalous patterns and potential intrusion attempts in real time.</p>
+            <ul class="project-card__features" aria-label="Key features">
+              <li>Stream processing pipeline handling 50k+ events/second</li>
+              <li>Pattern-based anomaly detection with configurable rules</li>
+              <li>Automated alert escalation and incident correlation</li>
+            </ul>
             <ul class="project-card__tags" aria-label="Technologies used">
               <li>Go</li>
               <li>Elasticsearch</li>
