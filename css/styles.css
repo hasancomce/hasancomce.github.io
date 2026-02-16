@@ -523,6 +523,12 @@ p {
   color: var(--color-accent);
 }
 
+.project-card__link--disabled {
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+
 .project-card__icon {
   flex-shrink: 0;
 }
