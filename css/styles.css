@@ -60,6 +60,7 @@ ul, ol {
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   --font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
 
+  --text-xs: 0.750rem;
   --text-sm: 0.875rem;
   --text-base: 1rem;
   --text-lg: 1.125rem;
@@ -361,7 +362,7 @@ p {
 
 .focus-areas__list {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
   gap: var(--space-lg);
 }
 
@@ -381,6 +382,7 @@ p {
   font-size: var(--text-sm);
   color: var(--color-text-muted);
   line-height: 1.5;
+  text-align: justify;
 }
 
 /* ===========================
@@ -447,9 +449,18 @@ p {
 
 .project-card__header {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  gap: var(--space-sm);
+  align-items: flex-start;
   justify-content: space-between;
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
+}
+
+.project-card__header span {
+  font-size: var(--text-xs);
+  color: var(--color-text-muted);
+  font-weight: var(--weight-normal);
+  display: block;
 }
 
 .project-card__title {
